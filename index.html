@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>30DaysOfJavaScript:23 Day: Keyboard Key </title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+</head>
+
+<body>
+	<div class="container">
+		<h1>Keyboard Generator</h1>
+
+		<div class='wrapper'>
+			<div class="key-box"></div>
+			<span id="span">Hint: Press any key to display the key and its code</span>
+			<div class="key-code green"></div>
+		</div>	
+	</div>
+
+
+<!-- or
+<div class='wrapper'>
+	<div class="key"></div>
+	<div class="key-code green"></div>
+</div>	
+
+<script>
+	let keyName = document.querySelector('.key')
+		let keyCode = document.querySelector('.key-code')
+
+		document.body.addEventListener('keydown', e => {
+			keyName.innerHTML = ''
+			keyCode.innerHTML = ''
+			let keyMessage = `<h1>You pressed <span class='green'>${e.key}</span></h1>` 
+			keyName.innerHTML = keyMessage
+			let keyCodeMessage = `<h1><span class='green'>${e.keyCode}</span></h1>` 
+			keyCode.innerHTML = keyCodeMessage
+		})
+</script>	 -->
+
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
